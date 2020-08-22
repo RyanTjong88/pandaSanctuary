@@ -19,7 +19,6 @@ html {
 img {
     max-width: 100%;
 }
-/* makes the image always stay within its container */
 
 a {
     color: #FFF;
@@ -29,6 +28,27 @@ a {
 
 h2 {
     font: 400 4.2rem 'Offside', cursive;
+}
+
+p {
+    font: 400 2rem 'Barlow', sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+button {
+    font: 400 2rem 'Offside', cursive;
+    text-align: center;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    box-shadow: #000 5px 5px;
+    padding: 10px 22px;
 }
 
 .wrapper {
@@ -99,7 +119,7 @@ header nav li:focus,
     font-size: 2.8rem;
 }
 
-/* main */
+/* main / firstSection */
 
 .containerOne {
     background-color: #D6F1E4;
@@ -117,13 +137,21 @@ header nav li:focus,
 
 .containerOne li {
     float: left;
-    width: calc((100% - 60px) / 3);
-    margin: 0 30px 30px 0;
+    width: calc((100% - 80px) / 3);
+    margin: 0 40px 40px 0;
     list-style: none;
+}
+
+.containerOne ul {
+    padding: 0;
 }
 
 .containerOne li:last-child {
     margin-right: 0;
+}
+
+.containerTwo {
+    padding: 60px 0 80px;
 }
 
 .imgContainer,
@@ -136,11 +164,209 @@ header nav li:focus,
 }
 
 .contentContainer {
+    /* added height selector so the hover effect on the button does not alter the background-size / comment out height selector for clarification */
+    height: 350px;
     width: calc(75% - 30px);
     margin-left: 30px;
 }
 
+.readMore {
+    color: #FFF;
+    background-color: #116500;
+}
 
+/* main / secondSection */
+
+.containerThree {
+    background-color: #213C28;
+}
+
+.containerThree h2,
+.containerThree p {
+    color: #FFF;
+}
+
+.containerThree h2 {
+    margin-top: 120px;
+}
+
+.contentContainerTwo {
+    padding-right: 80px;
+}
+
+.contentContainerThree {
+    padding-left: 80px;
+    width: 50%;
+    float: right;
+    padding-bottom: 145px;
+}
+
+.readMoreTwo {
+    color: #116500;
+    background-color: #FFF;
+}
+
+.imgContainerTwo,
+.contentContainerTwo {
+    width: 50%;
+    float: left;
+}
+
+.imgContainerTwo {
+    position: relative;
+}
+
+.img1 {
+    max-width: 49.5vw;
+}
+
+.img2 {
+    max-width: 49.5vw;
+    position: absolute;
+    margin-left: -120px;
+}
+
+/* main / sectionThreee */
+
+.containerFour {
+    background-color: #D6F1E4;
+    height: 300px;
+}
+
+.containerFour ul {
+    text-align: center;
+    padding: 150px 0;
+    margin: 0;
+}
+
+.containerFour li {
+    list-style: none;
+    font: 400 4rem 'Offside', cursive;
+    display: inline-block;
+    padding: 0 100px;
+    position: relative;
+}
+
+.containerFour li:hover,
+.containerFour li:focus {
+    font-size: 4.4rem;
+}
+
+.containerFour a {
+    color: #116500;
+}
+
+.containerFour i {
+    font-size: 6rem;
+    color: #2C2D2C;
+    position: absolute;
+    bottom: 70px;
+    right: 41%;
+}
+
+/* footer */
+
+footer {
+    background-color: #213C28;
+}
+
+footer section {
+    padding: 100px 0;
+}
+
+footer section div,
+footer section nav {
+    float: left;
+}
+
+footer div:first-child {
+    width: 50%;
+}
+
+footer div:nth-of-type(2n) {
+    width: 35%;
+    padding-left: 90px;
+}
+
+input[type="email"] {
+    color: black;
+    font-size: 2rem;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 30px;
+    width: 75%;
+}
+
+input[type="email"]:hover,
+input[type="email"]:focus {
+    background-color: #000;
+    color: #FFF;
+}
+
+input[type="submit"] {
+    background-color: #2C2D2C;
+    color: #FFF;
+    font: 400 2rem 'Offside', cursive;
+    text-transform: uppercase;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 24%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    box-shadow: #000 5px 5px;
+    padding: 10px 22px;
+}
+
+footer p {
+    color: #FFF;
+    margin: 0;
+}
+
+footer nav {
+    width: 15%;
+    text-align: right;
+}
+
+h3,
+footer li {
+    color: #FFF;
+    font: 400 2.5rem 'Offside', cursive;
+    list-style: none;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+
+footer li:hover,
+footer li:focus {
+    font-size: 3rem;
+    text-shadow: #000 5px 5px;
+}
+
+.junoCollege {
+    font: 400 4rem 'Offside', cursive;
+    float: none;
+    clear: both;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.junoCollege:hover,
+.junoCollege:focus {
+    text-shadow: #000 5px 5px;
+    font-size: 4.5rem;
+}
+
+.copyright p {
+    background-color: #2C2D2C;
+    color: #FFF;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
 
 
 
