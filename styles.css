@@ -98,148 +98,144 @@ h1 {
     width: 510px;
 }
 
-.socialMedia ul {
+.social-media ul {
     position: absolute;
     right: 3%;
     top: 12%;
 }
 
-.socialMedia li {
+.social-media li {
     list-style: none;
     font: 700 2rem 'Barlow', sans-serif;
     line-height: 40px;
     text-align: center;
 }   
 
+.logo:hover,
+.logo:focus,
 header nav li:hover,
 header nav li:focus,
-.socialMedia li:hover,
-.socialMedia li:focus {
+.social-media li:hover,
+.social-media li:focus {
     text-shadow: #000 5px 5px;
     font-size: 2.8rem;
 }
 
 /* main / firstSection */
 
-.containerOne {
+.container-one {
     background-color: #D6F1E4;
 }
 
-.containerOne h2 {
+.container-one h2 {
     color: #116500;
     margin: 0;
 }
 
-.ourNewFriends {
+.our-new-friends {
     text-align: center;
     padding: 70px 0;
 }
 
-.containerOne li {
+.container-one li {
     float: left;
     width: calc((100% - 80px) / 3);
     margin: 0 40px 40px 0;
     list-style: none;
 }
 
-.containerOne ul {
+.container-one ul {
     padding: 0;
 }
 
-.containerOne li:last-child {
+.container-one li:last-child {
     margin-right: 0;
 }
 
-.containerTwo {
+.container-two {
     padding: 60px 0 80px;
 }
 
-.imgContainer,
-.contentContainer {
+.img-container,
+.content-container {
     float: left;
 }
 
-.imgContainer {
+.img-container {
     width: 25%;
 }
 
-.contentContainer {
+.content-container {
     /* added height selector so the hover effect on the button does not alter the background-size / comment out height selector for clarification */
     height: 350px;
     width: calc(75% - 30px);
     margin-left: 30px;
 }
 
-.readMore {
+.read-more {
     color: #FFF;
     background-color: #116500;
 }
 
 /* main / secondSection */
 
-.containerThree {
+.container-three {
     background-color: #213C28;
 }
 
-.containerThree h2,
-.containerThree p {
+.container-three h2,
+.container-three p {
     color: #FFF;
 }
 
-.containerThree h2 {
-    margin-top: 120px;
+.container-three h2 {
+    margin: 0;
 }
 
-.contentContainerTwo {
-    padding-right: 80px;
+.content-container-two {
+    padding: 130px 80px 0 0;
 }
 
-.contentContainerThree {
-    padding-left: 80px;
+.content-container-three {
+    padding: 130px 0 0 80px;
     width: 50%;
     float: right;
-    padding-bottom: 145px;
 }
 
-.readMoreTwo {
-    color: #116500;
-    background-color: #FFF;
-}
-
-.imgContainerTwo,
-.contentContainerTwo {
+.img-container-two,
+.content-container-two {
     width: 50%;
     float: left;
 }
 
-.imgContainerTwo {
-    position: relative;
-}
-
-.img1 {
+.img-1 {
     max-width: 49.5vw;
 }
 
-.img2 {
+.img-2 {
     max-width: 49.5vw;
-    position: absolute;
-    margin-left: -120px;
+}
+
+/* button */
+.read-more-two {
+    color: #116500;
+    background-color: #FFF;
 }
 
 /* main / sectionThreee */
 
-.containerFour {
+.container-four {
     background-color: #D6F1E4;
     height: 300px;
 }
 
-.containerFour ul {
+.container-four ul {
     text-align: center;
     padding: 150px 0;
     margin: 0;
 }
 
-.containerFour li {
+.container-four li {
     list-style: none;
     font: 400 4rem 'Offside', cursive;
     display: inline-block;
@@ -247,16 +243,16 @@ header nav li:focus,
     position: relative;
 }
 
-.containerFour li:hover,
-.containerFour li:focus {
+.container-four li:hover,
+.container-four li:focus {
     font-size: 4.4rem;
 }
 
-.containerFour a {
+.container-four a {
     color: #116500;
 }
 
-.containerFour i {
+.container-four i {
     font-size: 6rem;
     color: #2C2D2C;
     position: absolute;
@@ -346,7 +342,7 @@ footer li:focus {
     text-shadow: #000 5px 5px;
 }
 
-.junoCollege {
+.juno-college {
     font: 400 4rem 'Offside', cursive;
     float: none;
     clear: both;
@@ -354,8 +350,8 @@ footer li:focus {
     padding-top: 50px;
 }
 
-.junoCollege:hover,
-.junoCollege:focus {
+.juno-college:hover,
+.juno-college:focus {
     text-shadow: #000 5px 5px;
     font-size: 4.5rem;
 }
