@@ -27,6 +27,9 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="social-media">
                 <h1>A safe and loving place for all pandas</h1>
                 <ul>
@@ -53,8 +56,8 @@
                 <h2 class="our-new-friends">Our New Friends</h2>
                 <ul>
                     <li><img src="./assets/assets/gallery-image-1@2x.png" alt="Panda eating leaves"></li>
-                    <li><img src="./assets/assets/gallery-image-2@2x.png" alt="Side view of Panda"></li>
-                    <li><img src="./assets/assets/gallery-image-3@2x.png" alt="Two Pandas playing together"></li>
+                    <li class="image-2"><img src="./assets/assets/gallery-image-2@2x.png" alt="Side view of Panda"></li>
+                    <li class="image-3"><img src="./assets/assets/gallery-image-3@2x.png" alt="Two Pandas playing together"></li>
                 </ul>
             </div>
             
@@ -62,37 +65,44 @@
                 <div class="img-container">
                     <img src="./assets/assets/small-box@2x.png" alt="panda in a tree">
                 </div>
-                <div class="content-container">
+                <div class="content-container clearfix">
                     <h2>More about our park</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deserunt! Velit pariatur illo incidunt consequuntur veritatis, unde odit saepe! Asperiores, nemo? Aperiam atque facere voluptate velit ab unde libero aliquam, tempore, in nobis similique beatae commodi nostrum iure minima magni explicabo ducimus porro amet temporibus ipsum deserunt? Earum tempora in cumque, quia non iusto sint eligendi, assumenda molestias odio reiciendis labore quasi consequatur repellendus alias numquam illo modi esse hic aut quidem aspernatur incidunt officia minima. Quis, cum necessitatibus? Quas.</p>
-                    <button class="read-more">read more</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deserunt! Velit pariatur illo incidunt consequuntur veritatis, unde odit saepe! Asperiores, nemo? Aperiam atque facere voluptate velit ab unde libero aliquam, tempore, in nobis similique beatae commodi nostrum iure minima magni explicabo ducimus porro amet temporibus ipsum deserunt? Earum tempora in cumque, quia non iusto sint eligendi.</p>
+                    <div class="button">
+                        <button class="read-more">read more</button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="container-three">
             <div class="clearfix">
-                <div class="wrapper">
-                    <div class="wrapper content-container-two">
-                        <h2>Bobby and Bella</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti illo quaerat nesciunt aperiam sapiente excepturi ratione vero l  aborum molestiae a aspernatur beatae fugiat odio maxime accusantium natus adipisci eos esse qui totam ipsum hic! Minus, ea facere? Asperiores, quo!</p>
-                        <button class="read-more-two">read more</button>
-                    </div>
-                </div>
 
                 <div class="img-container-two">
                     <img class="img-1" src="./assets/assets/image-2@2x.png" alt="two small pandas lying down">
                 </div>
 
-                <div class="img-container-two">
-                    <img class="img-2" src="./assets/assets/left-image@2x.png" alt="panda with bamboo leaf in mouth">
+                <div class="wrapper">
+                    <div class="content-container-two">
+                        <h2>Bobby and Bella</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti illo quaerat nesciunt aperiam sapiente excepturi ratione vero l  aborum molestiae a aspernatur beatae fugiat odio maxime accusantium natus adipisci eos esse qui totam ipsum hic! Minus, ea facere? Asperiores, quo!</p>
+                        <div class="button">
+                            <button class="read-more-two">read more</button>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="img-container-three">
+                    <img class="img-2" src="./assets/assets/left-image@2x.png" alt="panda with bamboo leaf in mouth">
+                </div>
+                
                 <div class="wrapper">
                     <div class="content-container-three">
                         <h2>Look at Marco now</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis ducimus in quos, facilis voluptatem vel quaerat eaque sequi quia! Quas eum, ab mollitia ratione esse fugiat est nostrum cumque distinctio pariatur excepturi animi amet quae nulla ea in dolorem.</p>
-                        <button class="read-more-two">read more</button>
+                        <div class="button">
+                            <button class="read-more-two">read more</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,7 +120,7 @@
             <section class="wrapper clearfix">    
                 <div>
                     <h3>Stay Updated</h3>
-                    <p>Subscribe to our newsletter to stay updated</p>
+                    <p>Subscribe to our newsletter to stay updated.</p>
                     <form action="#" method="#" class="myForm" name="myForm">
                         
                         <label for="userEmail"></label>
@@ -121,7 +131,7 @@
                 </div>
                 <div>
                     <h3>Contact</h3>
-                    <p>info@email.com 123 - 456 - 7890</p>
+                    <p class="number">info@email.com 123 - 456 - 7890</p>
                     <p>123 some road, Toronto, ON</p>
                     <p>A5A 5A5, Canada</p>
                 </div>
