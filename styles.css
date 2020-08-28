@@ -8,8 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* DONT FORGET TO ADD MEDIA QUERIES AT 320PX. THIS IS WHAT THEY WILL BE MARKING THE PROJECT ON */
-
 /* global */
 
 html {
@@ -366,20 +364,36 @@ footer li:focus {
     text-align: center;
 }
 
-
-
 /* media queries */
 
-@media (max-width: 940px) {
-    /* use on float items that i now want to go under each other */
-    /* float: none; */
-    /* width: 100%; */
+@media (max-width: 1125px) {
 
+    .img-container-two,
+    .img-container-three,
+    .content-container-two,
+    .content-container-three {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-four li {
+        padding: 0px 0px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        text-align: center;
+    }
+    
+    input[type="submit"] {
+        width: 50%;
+        margin-bottom: 50px;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    
     
     header {
         background-image: url(./assets/assets/header-image.png);
@@ -497,8 +511,8 @@ footer li:focus {
         right: 41%;
     }
 
-    .container-four i .fas fa-briefcase {
-        right: 0;
+    .container-four li:nth-of-type(2n) {
+        left: 8px;
     }
 
     /* footer */
@@ -547,10 +561,6 @@ footer li:focus {
     }
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-}
-
 @media (max-width: 320px) {
 
     header {
@@ -579,6 +589,10 @@ footer li:focus {
     .container-four i {
         right: 50px;
         font-size: 5rem;
+    }
+
+    .container-four li:nth-of-type(2n) {
+        left: 0px;
     }
 
     footer div:nth-of-type(2n) {
